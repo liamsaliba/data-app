@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="style.css">
+
+		<title>Data</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>Data App <small>by Liam Saliba</small></h1>
+			</div>
+			
+
+			<label class="control-label" for="input-id">Person Seed</label>
+			<div id="input" class="input-group input-group-lg">
+				<input id="input-id" type="number" class="form-control" placeholder="enter number">
+				<span class="input-group-btn">
+					<button id='input-id-random' class="btn btn-default" type="button"><span class="glyphicon glyphicon-random" aria-hidden="true"></span><span class="sr-only">Random</span></button>
+					<button id='input-id-btn' class="btn btn-primary" type="button"><span class="glyphicon glyphicon-send" aria-hidden="true"><span class="sr-only">Enter</span></button>
+				</span>
+			</div>
+
+			<div id="output" class="hidden">
+				<h3>Output</h3>
+				<div class="well-sm table-responsive">
+					<table id="output-table" class="table table-condensed table-hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>ID</th>
+								<th>First</th>
+								<th>Last</th>
+								<th>Age</th>
+								<th>Sex</th>
+								<th>Religion</th>
+								<th>Race</th>
+							</tr>
+						</thead>
+						<tbody id="output-table-body">
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.0/seedrandom.min.js"></script> 
+		<!--https://github.com/davidbau/seedrandom - seedrandom-->
+		<script src="main.js"></script>
+	</body>
+
+</html>
